@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the eBO Metadata feature.
+ */
+
+include_once 'ebo_metadata.features.inc';
