@@ -49,23 +49,23 @@ function ebo_metadata_feeds_importer_default() {
             'unique' => 1,
           ),
           1 => array(
-            'source' => 'title',
-            'target' => 'title',
-            'unique' => FALSE,
-          ),
-          2 => array(
             'source' => 'area_int',
             'target' => 'field_int_area',
             'unique' => FALSE,
           ),
+          2 => array(
+            'source' => 'qs',
+            'target' => 'field_meta_query_subject',
+            'unique' => FALSE,
+          ),
           3 => array(
-            'source' => 'area',
-            'target' => 'field_area',
+            'source' => 'item',
+            'target' => 'field_meta_item',
             'unique' => FALSE,
           ),
           4 => array(
-            'source' => 'query_subject',
-            'target' => 'field_query_subject',
+            'source' => 'seq',
+            'target' => 'field_meta_seq',
             'unique' => FALSE,
           ),
           5 => array(
@@ -74,13 +74,48 @@ function ebo_metadata_feeds_importer_default() {
             'unique' => FALSE,
           ),
           6 => array(
+            'source' => 'area',
+            'target' => 'field_area',
+            'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => 'level_1',
+            'target' => 'field_meta_level_1',
+            'unique' => FALSE,
+          ),
+          8 => array(
+            'source' => 'level_2',
+            'target' => 'field_meta_level_2',
+            'unique' => FALSE,
+          ),
+          9 => array(
+            'source' => 'level_3',
+            'target' => 'field_meta_level_3',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'title',
+            'target' => 'title',
+            'unique' => FALSE,
+          ),
+          11 => array(
+            'source' => 'query_subject',
+            'target' => 'field_query_subject',
+            'unique' => FALSE,
+          ),
+          12 => array(
             'source' => 'description',
             'target' => 'field_meta_description',
             'unique' => FALSE,
           ),
-          7 => array(
+          13 => array(
             'source' => 'pulls_from',
             'target' => 'field_meta_pulls_from',
+            'unique' => FALSE,
+          ),
+          14 => array(
+            'source' => 'type',
+            'target' => 'field_meta_int_type',
             'unique' => FALSE,
           ),
         ),

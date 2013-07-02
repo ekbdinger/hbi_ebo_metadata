@@ -51,11 +51,11 @@ function ebo_metadata_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -89,7 +89,7 @@ function ebo_metadata_field_default_field_instances() {
         'sort_options' => 0,
       ),
       'type' => 'select_or_other_buttons',
-      'weight' => -3,
+      'weight' => 6,
     ),
   );
 
@@ -101,7 +101,7 @@ function ebo_metadata_field_default_field_instances() {
     'description' => 'integer value',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'number',
         'settings' => array(
           'decimal_separator' => '.',
@@ -135,7 +135,7 @@ function ebo_metadata_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => -4,
+      'weight' => 1,
     ),
   );
 
@@ -151,7 +151,7 @@ function ebo_metadata_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -175,7 +175,210 @@ function ebo_metadata_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_int_type'
+  $field_instances['node-ebo_metadata-field_meta_int_type'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Indicates the type of metadata item:
+1 = Query Item
+2 = Dimension
+3 = Measure',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_int_type',
+    'label' => 'type (int)',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_item'
+  $field_instances['node-ebo_metadata-field_meta_item'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Sequential number within the query subject (qs)',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_item',
+    'label' => 'Item',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_level_1'
+  $field_instances['node-ebo_metadata-field_meta_level_1'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_level_1',
+    'label' => 'Level 1',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_level_2'
+  $field_instances['node-ebo_metadata-field_meta_level_2'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_level_2',
+    'label' => 'Level 2',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_level_3'
+  $field_instances['node-ebo_metadata-field_meta_level_3'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_level_3',
+    'label' => 'Level 3',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
     ),
   );
 
@@ -191,7 +394,7 @@ function ebo_metadata_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -215,7 +418,93 @@ function ebo_metadata_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_query_subject'
+  $field_instances['node-ebo_metadata-field_meta_query_subject'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Indicates a Query subject - these are simply numbered sequentially',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_integer',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_query_subject',
+    'label' => 'qs',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-ebo_metadata-field_meta_seq'
+  $field_instances['node-ebo_metadata-field_meta_seq'] = array(
+    'bundle' => 'ebo_metadata',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Overall sequential number of all metadata items',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_meta_seq',
+    'label' => 'seq',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
     ),
   );
 
@@ -227,11 +516,11 @@ function ebo_metadata_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -265,7 +554,7 @@ function ebo_metadata_field_default_field_instances() {
         'sort_options' => 0,
       ),
       'type' => 'select_or_other_buttons',
-      'weight' => -1,
+      'weight' => 11,
     ),
   );
 
@@ -277,11 +566,11 @@ function ebo_metadata_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -305,7 +594,7 @@ function ebo_metadata_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -2,
+      'weight' => 10,
     ),
   );
 
@@ -315,10 +604,24 @@ function ebo_metadata_field_default_field_instances() {
   t('Area (int)');
   t('Comment');
   t('Description');
+  t('Indicates a Query subject - these are simply numbered sequentially');
+  t('Indicates the type of metadata item:
+1 = Query Item
+2 = Dimension
+3 = Measure');
+  t('Item');
+  t('Level 1');
+  t('Level 2');
+  t('Level 3');
+  t('Overall sequential number of all metadata items');
   t('Pulls From');
   t('Query Subject');
+  t('Sequential number within the query subject (qs)');
   t('Type');
   t('integer value');
+  t('qs');
+  t('seq');
+  t('type (int)');
 
   return $field_instances;
 }
