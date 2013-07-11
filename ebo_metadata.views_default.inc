@@ -202,6 +202,22 @@ function ebo_metadata_views_default_views() {
     4 => 0,
     5 => 0,
   );
+  /* Filter criterion: Content: Meta Test (field_meta_test) */
+  $handler->display->display_options['filters']['field_meta_test_value']['id'] = 'field_meta_test_value';
+  $handler->display->display_options['filters']['field_meta_test_value']['table'] = 'field_data_field_meta_test';
+  $handler->display->display_options['filters']['field_meta_test_value']['field'] = 'field_meta_test_value';
+  $handler->display->display_options['filters']['field_meta_test_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_meta_test_value']['expose']['operator_id'] = 'field_meta_test_value_op';
+  $handler->display->display_options['filters']['field_meta_test_value']['expose']['label'] = 'Meta Test';
+  $handler->display->display_options['filters']['field_meta_test_value']['expose']['operator'] = 'field_meta_test_value_op';
+  $handler->display->display_options['filters']['field_meta_test_value']['expose']['identifier'] = 'field_meta_test_value';
+  $handler->display->display_options['filters']['field_meta_test_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

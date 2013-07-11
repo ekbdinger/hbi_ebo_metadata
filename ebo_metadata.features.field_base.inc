@@ -332,6 +332,33 @@ function ebo_metadata_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_meta_test'
+  $field_bases['field_meta_test'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_meta_test',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'test1' => 'option 1',
+        'test2' => 'option 2',
+        'test3' => 'option 3',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_meta_type'
   $field_bases['field_meta_type'] = array(
     'active' => 1,
